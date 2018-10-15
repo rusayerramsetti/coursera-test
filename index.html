@@ -1,17 +1,28 @@
 <!DOCTYPE html>
-<html ng-app="MyFirstApp">
+<html ng-app="LunchCheck">
   <head>
     <meta charset="utf-8">
     <script src="angular.min.js"></script>
     <script src="app.js"></script>
-    <style>body{font-size:1.5em;}</style>
-    <title>My First angularjs application</title>
+
+    <title>My First Module Solution</title>
+
   </head>
   <body>
+    <h1>My First Module Solution</h1>
 
 
-      <div ng-controller="MyFirstController">
+      <div ng-controller="LunchCheckController">
+        <input type="text" ng-model="name">
+        
 
+
+          <button ng-click="checkIfTooMuch()">Check If Too Much</button>
+
+          <div>
+            {{message}}
+          </div>
     </div>
+
   </body>
 </html>
